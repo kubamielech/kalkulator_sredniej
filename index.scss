@@ -1,0 +1,73 @@
+.wrapper {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.item {
+	&__title {
+		position: relative;
+	}
+
+	&__ects {
+		position: absolute;
+		top: -5px;
+		margin-left: 5px;
+        font-weight: bold;
+	}
+
+	&__inputs {
+		display: flex;
+	}
+
+    &__input {
+        cursor: pointer;
+        padding: 5px;
+
+        &-text {
+            padding: 5px;
+            cursor: pointer;
+
+            &--three {
+                color: tomato;
+            }
+
+            &--four {
+                color: orange;
+            }
+
+            &--five {
+                color: limegreen;
+            }
+        }
+
+        &-box {
+            margin-right: 10px;
+        }
+    }
+}
+
+.items {
+    margin-bottom: 20px;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.semestr {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+@media (min-width: 768px) {
+    .items {
+        display: flex;
+    }
+    .semestr-box {
+        width: 50%;
+    }
+    .semestr {
+        margin-top: 1em;
+    }
+}

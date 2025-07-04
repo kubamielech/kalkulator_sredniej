@@ -1,0 +1,63 @@
+.wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.item__title {
+  position: relative;
+}
+.item__ects {
+  position: absolute;
+  top: -5px;
+  margin-left: 5px;
+  font-weight: bold;
+}
+.item__inputs {
+  display: flex;
+}
+.item__input {
+  cursor: pointer;
+  padding: 5px;
+}
+.item__input-text {
+  padding: 5px;
+  cursor: pointer;
+}
+.item__input-text--three {
+  color: tomato;
+}
+.item__input-text--four {
+  color: orange;
+}
+.item__input-text--five {
+  color: limegreen;
+}
+.item__input-box {
+  margin-right: 10px;
+}
+
+.items {
+  margin-bottom: 20px;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.semestr {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+@media (min-width: 768px) {
+  .items {
+    display: flex;
+  }
+  .semestr-box {
+    width: 50%;
+  }
+  .semestr {
+    margin-top: 1em;
+  }
+}/*# sourceMappingURL=index.css.map */

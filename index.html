@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator sredniej 1 rok</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Witam!</h1>
+        <p>Wprowadz oceny z 1-go roku i sprawdz jaka wyjdzie ci srednia.</p>
+        <div class="items">
+            <div class="semestr-box">
+                <p class="semestr semestr-2">2 semestr</p>
+                <div class="item">
+                    <p class="item__title">Autoprezentacja <span class="item__ects item__input-text--five"
+                            data-ects="2">2</span></p>
+                    <div class="item__inputs">
+                        <div class="item__input-box">
+                            <input type="radio" name="auto" id="auto-3" value="3" class="item__input"><label
+                                for="auto-3" class="item__input-text item__input-text--three">3</label>
+                        </div>
+                        <div class="item__input-box">
+                            <input type="radio" name="auto" id="auto-3-5" value="3.5" class="item__input"><label
+                                for="auto-3-5" class="item__input-text item__input-text--three">3.5</label>
+                        </div>
+                        <div class="item__input-box">
+                            <input type="radio" name="auto" id="auto-4" value="4" class="item__input"><label
+                                for="auto-4" class="item__input-text item__input-text--four">4</label>
+                        </div>
+                        <div class="item__input-box">
+                            <input type="radio" name="auto" id="auto-4-5" value="4.5" class="item__input"><label
+                                for="auto-4-5" class="item__input-text item__input-text--four">4.5</label>
+                        </div>
+                        <div class="item__input-box">
+                            <input type="radio" name="auto" id="auto-5" value="5" class="item__input"><label
+                                for="auto-5" class="item__input-text item__input-text--five">5</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="item semestr-2">
+                    <p class="item__title">Cyfrowe przetwarzanie sygnałów <span
+                            class="item__ects item__input-text--three" data-ects="5">5</span></p>
+                    <div class="item__inputs">
+                        <div class="item__input-box">
+                            <input type="radio" name="cps" id="cps-3" value="3" class="item__input"><label for="cps-3"
+                                class="item__input-text item__input-text--three">3</label>
+                        </div>
+                        <div class="item__input-box">
+                            <input type="radio" name="cps" id="cps-3-5" value="3.5" class="item__input"><label
+                                for="cps-3-5" class="item__input-text item__input-text--three">3.5</label>
+                        </div>
+                        <div class="item__input-box">
+                            <input type="radio" name="cps" id="cps-4" value="4" class="item__input"><label for="cps-4"
+                                class="item__input-text item__input-text--four">4</label>
+                        </div>
+                        <div class="item__input-box">
+                            <input type="radio" name="cps" id="cps-4-5" value="4.5" class="item__input"><label
+                                for="cps-4-5" class="item__input-text item__input-text--four">4.5</label>
+                        </div>
+                        <div class="item__input-box">
+                            <input type="radio" name="cps" id="cps-5" value="5" class="item__input"><label for="cps-5"
+                                class="item__input-text item__input-text--five">5</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="item semestr-2">
+                    <p class="item__title">Ekonomia <span class="item__ects item__input-text--five"
+                            data-ects="1">1</span>
+                    </p>
+                    <div class="item__inputs">
+                        <div class="item__input-box">
+                            <input type="radio" name="eko" id="eko-3" value="3" class="item__input"><label for="eko-3"
+                                class="item__input-text item__input-text--three">3</label>
+                        </div>
+                        <div class="item__input-box">
+                            <input type="radio" name="eko" id="eko-3-5" value="3.5" class="item__input"><label
+                                for="eko-3-5" class="item__input-text item__input-text--three">3.5</label>
+                        </div>
+                        <div class="item__input-box">
+                            <input type="radio" name="eko" id="eko-4" value="4" class="item__input"><label for="eko-4"
+                                class="item__input-text item__input-text--four">4</label>
+                        </div>
+                        <div class="item__input-box">
+                            <input type="radio" name="eko" id="eko-4-5" value="4.5" class="item__input"><label
+                                for="eko-4-5" class="item__input-text item__input-text--four">4.5</label>
+                        </div>
+                        <div class="item__input-box">
+                            <input type="radio" name="eko" id="eko-5" value="5" class="item__input"><label for="eko-5"
+                                class="item__input-text item__input-text--five">5</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="item semestr-2">
+                    <p class="item__title">Elektrotechnika <span class="item__ects item__input-text--three"
+                            data-ects="5">5</span></p>
+                    <div class="item__inputs">
+                        <div class="item__input-box">
+                            <input type="radio" name="ele" id="ele-3" value="3" class="item__input"><label for="ele-3"
+                                class="item__input-text item__input-text--three">3</label>
+                        </div>
+                        <div class="item__input-box">
+                            <input type="radio" name="ele" id="ele-3-5" value="3.5" class="item__input"><label
+                                for="ele-3-5" class="item__input-text item__input-text--three">3.5</label>
+                        </div>
+                        <div class="item__input-box">
+                            <input type="radio" name="ele" id="ele-4" value="4" class="item__input"><label for="ele-4"
+                                class="item__input-text item__input-text--four">4</label>
+                        </div>
+                        <div class="item__input-box">
+                            <input type="radio" name="ele" id="ele-4-5" value="4.5" class="item__input"><label
+                                for="ele-4-5" class="item__input-text item__input-text--four">4.5</label>
+                        </div>
+                        <div class="item__input-box">
+                            <input type="radio" name="ele" id="ele-5" value="5" class="item__input"><label for="ele-5"
+                                class="item__input-text item__input-text--five">5</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="item semestr-2">
+                    <p class="item__title">Matematyka <span class="item__ects item__input-text--four"
+                            data-ects="4">4</span>
+                    </p>
+                    <div class="item__inputs">
+                        <div class="item__input-box">
+                            <input type="radio" name="mat" id="mat-3" value="3" class="item__input"><label for="mat-3"
+                                class="item__input-text item__input-text--three">3</label>
+                        </div>
+                        <div class="item__input-box">
+                            <input type="radio" name="mat" id="mat-3-5" value="3.5" class="item__input"><label
+                                for="mat-3-5" class="item__input-text item__input-text--three">3.5</label>
+                        </div>
+                        <div class="item__input-box">
+                            <input type="radio" name="mat" id="mat-4" value="4" class="item__input"><label for="mat-4"
+                                class="item__input-text item__input-text--four">4</label>
+                        </div>
+                        <div class="item__input-box">
+                            <input type="radio" name="mat" id="mat-4-5" value="4.5" class="item__input"><label
+                                for="mat-4-5" class="item__input-text item__input-text--four">4.5</label>
+                        </div>
+                        <div class="item__input-box">
+                            <input type="radio" name="mat" id="mat-5" value="5" class="item__input"><label for="mat-5"
+                                class="item__input-text item__input-text--five">5</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="item semestr-2">
+                    <p class="item__title">Mechanika <span class="item__ects item__input-text--four"
+                            data-ects="3">3</span>
+                    </p>
+                    <div class="item__inputs">
+                        <div class="item__input-box">
+                            <input type="radio" name="mech" id="mech-3" value="3" class="item__input"><label
+                                for="mech-3" class="item__input-text item__input-text--three">3</label>
+                        </div>
+                        <div class="item__input-box">
+                            <input type="radio" name="mech" id="mech-3-5" value="3.5" class="item__input"><label
+                                for="mech-3-5" class="item__input-text item__input-text--three">3.5</label>
+                        </div>
+                        <div class="item__input-box">
+                            <input type="radio" name="mech" id="mech-4" value="4" class="item__input"><label
+                                for="mech-4" class="item__input-text item__input-text--four">4</label>
+                        </div>
+                        <div class="item__input-box">
+                            <input type="radio" name="mech" id="mech-4-5" value="4.5" class="item__input"><label
+                                for="mech-4-5" class="item__input-text item__input-text--four">4.5</label>
+                        </div>
+                        <div class="item__input-box">
+                            <input type="radio" name="mech" id="mech-5" value="5" class="item__input"><label
+                                for="mech-5" class="item__input-text item__input-text--five">5</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="item semestr-2">
+                    <p class="item__title">Programowanie <span class="item__ects item__input-text--three"
+                            data-ects="6">6</span></p>
+                    <div class="item__inputs">
+                        <div class="item__input-box">
+                            <input type="radio" name="pro" id="pro-3" value="3" class="item__input"><label for="pro-3"
+                                class="item__input-text item__input-text--three">3</label>
+                        </div>
+                        <div class="item__input-box">
+                            <input type="radio" name="pro" id="pro-3-5" value="3.5" class="item__input"><label
+                                for="pro-3-5" class="item__input-text item__input-text--three">3.5</label>
+                        </div>
+                        <div class="item__input-box">
+                            <input type="radio" name="pro" id="pro-4" value="4" class="item__input"><label for="pro-4"
+                                class="item__input-text item__input-text--four">4</label>
+                        </div>
+                        <div class="item__input-box">
+                            <input type="radio" name="pro" id="pro-4-5" value="4.5" class="item__input"><label
+                                for="pro-4-5" class="item__input-text item__input-text--four">4.5</label>
+                        </div>
+                        <div class="item__input-box">
+                            <input type="radio" name="pro" id="pro-5" value="5" class="item__input"><label for="pro-5"
+                                class="item__input-text item__input-text--five">5</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="item semestr-2">
+                    <p class="item__title">Statystyka <span class="item__ects item__input-text--four"
+                            data-ects="4">4</span>
+                    </p>
+                    <div class="item__inputs">
+                        <div class="item__input-box">
+                            <input type="radio" name="sta" id="sta-3" value="3" class="item__input"><label for="sta-3"
+                                class="item__input-text item__input-text--three">3</label>
+                        </div>
+                        <div class="item__input-box">
+                            <input type="radio" name="sta" id="sta-3-5" value="3.5" class="item__input"><label
+                                for="sta-3-5" class="item__input-text item__input-text--three">3.5</label>
+                        </div>
+                        <div class="item__input-box">
+                            <input type="radio" name="sta" id="sta-4" value="4" class="item__input"><label for="sta-4"
+                                class="item__input-text item__input-text--four">4</label>
+                        </div>
+                        <div class="item__input-box">
+                            <input type="radio" name="sta" id="sta-4-5" value="4.5" class="item__input"><label
+                                for="sta-4-5" class="item__input-text item__input-text--four">4.5</label>
+                        </div>
+                        <div class="item__input-box">
+                            <input type="radio" name="sta" id="sta-5" value="5" class="item__input"><label for="sta-5"
+                                class="item__input-text item__input-text--five">5</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="semestr-box">
+                <p class="semestr">1 semestr</p>
+                <div class="item semestr-1">
+                    <p class="item__title">Analiza matematyczna <span class="item__ects item__input-text--three"
+                            data-ects="6">6!</span>
+                    </p>
+                    <div class="item__inputs">
+                        <div class="item__input-box">
+                            <input type="radio" name="ana" id="ana-3" value="3" class="item__input"><label for="ana-3"
+                                class="item__input-text item__input-text--three">3</label>
+                        </div>
+                        <div class="item__input-box">
+                            <input type="radio" name="ana" id="ana-3-5" value="3.5" class="item__input"><label
+                                for="ana-3-5" class="item__input-text item__input-text--three">3.5</label>
+                        </div>
+                        <div class="item__input-box">
+                            <input type="radio" name="ana" id="ana-4" value="4" class="item__input"><label for="ana-4"
+                                class="item__input-text item__input-text--four">4</label>
+                        </div>
+                        <div class="item__input-box">
+                            <input type="radio" name="ana" id="ana-4-5" value="4.5" class="item__input"><label
+                                for="ana-4-5" class="item__input-text item__input-text--four">4.5</label>
+                        </div>
+                        <div class="item__input-box">
+                            <input type="radio" name="ana" id="ana-5" value="5" class="item__input"><label for="ana-5"
+                                class="item__input-text item__input-text--five">5</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="item semestr-1">
+                    <p class="item__title">Etyka biznesu <span class="item__ects item__input-text--five"
+                            data-ects="2">2</span>
+                    </p>
+                    <div class="item__inputs">
+                        <div class="item__input-box">
+                            <input type="radio" name="ety" id="ety-3" value="3" class="item__input"><label for="ety-3"
+                                class="item__input-text item__input-text--three">3</label>
+                        </div>
+                        <div class="item__input-box">
+                            <input type="radio" name="ety" id="ety-3-5" value="3.5" class="item__input"><label
+                                for="ety-3-5" class="item__input-text item__input-text--three">3.5</label>
+                        </div>
+                        <div class="item__input-box">
+                            <input type="radio" name="ety" id="ety-4" value="4" class="item__input"><label for="ety-4"
+                                class="item__input-text item__input-text--four">4</label>
+                        </div>
+                        <div class="item__input-box">
+                            <input type="radio" name="ety" id="ety-4-5" value="4.5" class="item__input"><label
+                                for="ety-4-5" class="item__input-text item__input-text--four">4.5</label>
+                        </div>
+                        <div class="item__input-box">
+                            <input type="radio" name="ety" id="ety-5" value="5" class="item__input"><label for="ety-5"
+                                class="item__input-text item__input-text--five">5</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="item semestr-1">
+                    <p class="item__title">Fizyka <span class="item__ects item__input-text--three"
+                            data-ects="6">6</span>
+                    </p>
+                    <div class="item__inputs">
+                        <div class="item__input-box">
+                            <input type="radio" name="fiz" id="fiz-3" value="3" class="item__input"><label for="fiz-3"
+                                class="item__input-text item__input-text--three">3</label>
+                        </div>
+                        <div class="item__input-box">
+                            <input type="radio" name="fiz" id="fiz-3-5" value="3.5" class="item__input"><label
+                                for="fiz-3-5" class="item__input-text item__input-text--three">3.5</label>
+                        </div>
+                        <div class="item__input-box">
+                            <input type="radio" name="fiz" id="fiz-4" value="4" class="item__input"><label for="fiz-4"
+                                class="item__input-text item__input-text--four">4</label>
+                        </div>
+                        <div class="item__input-box">
+                            <input type="radio" name="fiz" id="fiz-4-5" value="4.5" class="item__input"><label
+                                for="fiz-4-5" class="item__input-text item__input-text--four">4.5</label>
+                        </div>
+                        <div class="item__input-box">
+                            <input type="radio" name="fiz" id="fiz-5" value="5" class="item__input"><label for="fiz-5"
+                                class="item__input-text item__input-text--five">5</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="item semestr-1">
+                    <p class="item__title">Informatyka <span class="item__ects item__input-text--three"
+                            data-ects="7">7</span>
+                    </p>
+                    <div class="item__inputs">
+                        <div class="item__input-box">
+                            <input type="radio" name="inf" id="inf-3" value="3" class="item__input"><label for="inf-3"
+                                class="item__input-text item__input-text--three">3</label>
+                        </div>
+                        <div class="item__input-box">
+                            <input type="radio" name="inf" id="inf-3-5" value="3.5" class="item__input"><label
+                                for="inf-3-5" class="item__input-text item__input-text--three">3.5</label>
+                        </div>
+                        <div class="item__input-box">
+                            <input type="radio" name="inf" id="inf-4" value="4" class="item__input"><label for="inf-4"
+                                class="item__input-text item__input-text--four">4</label>
+                        </div>
+                        <div class="item__input-box">
+                            <input type="radio" name="inf" id="inf-4-5" value="4.5" class="item__input"><label
+                                for="inf-4-5" class="item__input-text item__input-text--four">4.5</label>
+                        </div>
+                        <div class="item__input-box">
+                            <input type="radio" name="inf" id="inf-5" value="5" class="item__input"><label for="inf-5"
+                                class="item__input-text item__input-text--five">5</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="item semestr-1">
+                    <p class="item__title">Metrologia <span class="item__ects item__input-text--three"
+                            data-ects="6">6</span>
+                    </p>
+                    <div class="item__inputs">
+                        <div class="item__input-box">
+                            <input type="radio" name="metr" id="metr-3" value="3" class="item__input"><label
+                                for="metr-3" class="item__input-text item__input-text--three">3</label>
+                        </div>
+                        <div class="item__input-box">
+                            <input type="radio" name="metr" id="metr-3-5" value="3.5" class="item__input"><label
+                                for="metr-3-5" class="item__input-text item__input-text--three">3.5</label>
+                        </div>
+                        <div class="item__input-box">
+                            <input type="radio" name="metr" id="metr-4" value="4" class="item__input"><label
+                                for="metr-4" class="item__input-text item__input-text--four">4</label>
+                        </div>
+                        <div class="item__input-box">
+                            <input type="radio" name="metr" id="metr-4-5" value="4.5" class="item__input"><label
+                                for="metr-4-5" class="item__input-text item__input-text--four">4.5</label>
+                        </div>
+                        <div class="item__input-box">
+                            <input type="radio" name="metr" id="metr-5" value="5" class="item__input"><label
+                                for="metr-5" class="item__input-text item__input-text--five">5</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="item semestr-1">
+                    <p class="item__title">Ochrona wlasnosci <span class="item__ects item__input-text--five"
+                            data-ects="1">1</span>
+                    </p>
+                    <div class="item__inputs">
+                        <div class="item__input-box">
+                            <input type="radio" name="och" id="och-3" value="3" class="item__input"><label for="och-3"
+                                class="item__input-text item__input-text--three">3</label>
+                        </div>
+                        <div class="item__input-box">
+                            <input type="radio" name="och" id="och-3-5" value="3.5" class="item__input"><label
+                                for="och-3-5" class="item__input-text item__input-text--three">3.5</label>
+                        </div>
+                        <div class="item__input-box">
+                            <input type="radio" name="och" id="och-4" value="4" class="item__input"><label for="och-4"
+                                class="item__input-text item__input-text--four">4</label>
+                        </div>
+                        <div class="item__input-box">
+                            <input type="radio" name="och" id="och-4-5" value="4.5" class="item__input"><label
+                                for="och-4-5" class="item__input-text item__input-text--four">4.5</label>
+                        </div>
+                        <div class="item__input-box">
+                            <input type="radio" name="och" id="och-5" value="5" class="item__input"><label for="och-5"
+                                class="item__input-text item__input-text--five">5</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="item semestr-1">
+                    <p class="item__title">Technologie informacyjne <span class="item__ects item__input-text--five"
+                            data-ects="2">2</span>
+                    </p>
+                    <div class="item__inputs">
+                        <div class="item__input-box">
+                            <input type="radio" name="tech" id="tech-3" value="3" class="item__input"><label
+                                for="tech-3" class="item__input-text item__input-text--three">3</label>
+                        </div>
+                        <div class="item__input-box">
+                            <input type="radio" name="tech" id="tech-3-5" value="3.5" class="item__input"><label
+                                for="tech-3-5" class="item__input-text item__input-text--three">3.5</label>
+                        </div>
+                        <div class="item__input-box">
+                            <input type="radio" name="tech" id="tech-4" value="4" class="item__input"><label
+                                for="tech-4" class="item__input-text item__input-text--four">4</label>
+                        </div>
+                        <div class="item__input-box">
+                            <input type="radio" name="tech" id="tech-4-5" value="4.5" class="item__input"><label
+                                for="tech-4-5" class="item__input-text item__input-text--four">4.5</label>
+                        </div>
+                        <div class="item__input-box">
+                            <input type="radio" name="tech" id="tech-5" value="5" class="item__input"><label
+                                for="tech-5" class="item__input-text item__input-text--five">5</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#footer" id="oblicz" class="btn">Oblicz średnią</a>
+        <a href="#" id="wyczysc" class="btn">Wyczyść</a>
+        <p id="wynik"></p>
+    </div>
+    <footer id="footer"></footer>
+    <script src="./index.js"></script>
+</body>
+
+</html>
